@@ -1,0 +1,77 @@
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    h2 {
+        font-size: 3rem;
+        margin: .5rem;
+    }
+
+    h3 {
+        font-size: 2.25rem;
+        font-weight: 300;
+        margin: .5rem;
+    }
+
+    &__price {
+        font-size: 1.8rem;
+        margin: 1rem;
+    }
+
+    &__colour {
+        font-size: 1.8rem;
+        margin: 1rem;
+
+        .sample {
+            width: 1.5rem;
+            height: 1.5rem;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 50%;
+            margin-left: 1rem;
+        }
+    }
+
+    &__features {
+        li {
+            font-weight: 300;
+            &::marker {
+                color: $grey;
+            }
+        }
+    }
+
+    &__sizes {
+        font-size: 1.4rem;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
+
+        select {
+            margin-left: .5rem;
+            border-radius: .5rem;
+            width: 3rem;
+            padding: .2rem;
+        }
+    }
+
+    &__addToCart {
+        margin-top: 1.5rem;
+        button {
+            background-color: $highlight;
+            color: #fff;
+            border: 0;
+            padding: .5rem 1rem;
+            font-size: 1.5rem;
+            border-radius: .5rem;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
